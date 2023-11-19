@@ -4,9 +4,12 @@ using UnityEngine;
 
 [CreateAssetMenu(menuName = "New Score")]
 
-public class score : ScriptableObject
+public class scoreDatas : ScriptableObject
 {
     public int scoreValue;
+
+    public delegate void ScoreUpdate(int value);
+    public static event ScoreUpdate OnUpdate;
 
     public void UpdateScoreValue(int Value)
     {
@@ -19,8 +22,8 @@ public class score : ScriptableObject
         UpdateScoreValue(initValue);
     }
 
-    public void UpdateScoreUI()
+    private void UpdateScoreUI()
     {
-
+        OnUpdate?.Invoke(scoreValue);
     }
 }

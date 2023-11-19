@@ -5,7 +5,11 @@ using UnityEngine;
 public class Collectible : MonoBehaviour, ICollectible
 {
     [SerializeField] int _value;
-    [SerializeField] score scoreDatas;
+    [SerializeField] scoreDatas _scoreData;
 
-    public void
+    public void Collect()
+    {
+        _scoreData.UpdateScoreValue(_value);
+        Destroy(gameObject);
+    }
 }

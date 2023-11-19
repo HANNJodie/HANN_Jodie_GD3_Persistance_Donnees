@@ -21,10 +21,6 @@ public class Deplacements : MonoBehaviour
         //var vDeplacement = Input.GetAxis("Vertical") * vitesseDeplacement;
         //RigidbodyPerso.velocity = transform.forward * vDeplacement;
         //RigidbodyPerso.velocity = (transform.forward * vDeplacement) + new Vector3(0, RigidbodyPerso.velocity.y, 0);
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    RigidbodyPerso.velocity += new Vector3(0, 10, 0);
-        //}
         //RigidbodyPerso.velocity = new Vector3(0, 0, vDeplacement);
 
         if (Input.GetKey(KeyCode.UpArrow))
@@ -43,5 +39,7 @@ public class Deplacements : MonoBehaviour
         {
             RigidbodyPerso.AddForce(-1f * vitesseDeplacement, 0f, 0f);
         }
+
+
     }
 }

@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f40d22e47a324f4b8fc566292bc32af, type: 3}
-  m_Name: New Score
+  m_Name: ScoreData
   m_EditorClassIdentifier: 
   scoreValue: 0
