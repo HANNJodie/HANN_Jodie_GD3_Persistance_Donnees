@@ -21,12 +21,52 @@ MonoBehaviour:
     Answer1: 1
     Answer2: -1
     QuestStarted: 0
-  - Index: 0
+  - Index: 1
     ShortSentence: ...
     LongSentence: "Viens tu d'arriver \xE0 \u0E21\u0E31\u0E07\u0E01\u0E23\u0E44\u0E1F
       ?"
     CharacterSpeaking: PNJ
     EndSentence: 0
     Answer1: 2
+    Answer2: -1
+    QuestStarted: 0
+  - Index: 2
+    ShortSentence: Oui
+    LongSentence: En effet c'est mon premier passage ici.
+    CharacterSpeaking: Joueur
+    EndSentence: 0
+    Answer1: 3
+    Answer2: -1
+    QuestStarted: 0
+  - Index: 3
+    ShortSentence: ...
+    LongSentence: Aimerais-tu de l'aide pour visiter ?
+    CharacterSpeaking: PNJ
+    EndSentence: 0
+    Answer1: 4
+    Answer2: 5
+    QuestStarted: 0
+  - Index: 4
+    ShortSentence: Non
+    LongSentence: Non merci, je vais me debrouiller.
+    CharacterSpeaking: Joueur
+    EndSentence: 0
+    Answer1: -1
+    Answer2: -1
+    QuestStarted: 0
+  - Index: 5
+    ShortSentence: Oui
+    LongSentence: Avec plaisir, votre presence sera d'une grande aide.
+    CharacterSpeaking: Joueur
+    EndSentence: 0
+    Answer1: 6
+    Answer2: -1
+    QuestStarted: 0
+  - Index: 6
+    ShortSentence: ...
+    LongSentence: Tres bien, dans ce cas suivez-moi !
+    CharacterSpeaking: Joueur
+    EndSentence: 0
+    Answer1: -1
     Answer2: -1
     QuestStarted: 0

@@ -7,27 +7,31 @@ public class SystemeDialogue : MonoBehaviour
     [SerializeField] private DatasDialogues _DialogDatas;
     [SerializeField] private UIDialoguesLong _UIDialog;
     [SerializeField] private UIDialoguesReponses _UIDialogAnswer;
+    private int actualSentence;
 
     public void StartTalking(int DialogueSentenceNumber)
     {
 
+        actualSentence = DialogueSentenceNumber;
 
-        _UIDialog.ShowLongDialog(_DialogDatas.Sentences[DialogueSentenceNumber].LongSentence);
+        _UIDialog.ShowLongDialog(_DialogDatas.Sentences[actualSentence].LongSentence);
+
+        int[] answerNumbers = new int[2];
+        answerNumbers[0] = _DialogDatas.Sentences[actualSentence].Answer1;
+        answerNumbers[1] = _DialogDatas.Sentences[actualSentence].Answer2;
+
         string[] answers = new string[2];
-        if (_DialogDatas.Sentences[DialogueSentenceNumber].Answer1 != -1)
-        {
-            answers[0] = _DialogDatas.Sentences[_DialogDatas.Sentences[DialogueSentenceNumber].Answer1].ShortSentence;
-        } else
-        {
-            answers[0] = "";
-        }
 
-        if (_DialogDatas.Sentences[DialogueSentenceNumber].Answer2 != -1)
+        for (int i = 0; i < answerNumbers.Length;i++)
         {
-            answers[0] = _DialogDatas.Sentences[_DialogDatas.Sentences[DialogueSentenceNumber].Answer2].ShortSentence;
-        } else
-        {
-            answers[0] = "";
+            if (answerNumbers[i] != -1)
+            {
+                answers[i] = _DialogDatas.Sentences[answerNumbers[i]].ShortSentence;
+            }
+            else
+            {
+                answers[i] = "";
+            }
         }
 
 
@@ -36,6 +40,16 @@ public class SystemeDialogue : MonoBehaviour
 
     }
 
-
+    public void SelectAnswer(int answerNumber)
+    {
+        if(answerNumber == 0)
+        {
+            StartTalking(_DialogDatas.Sentences[actualSentence].Answer1);
+        }
+        else
+        {
+            StartTalking(_DialogDatas.Sentences[actualSentence].Answer2);
+        }
+    }
 
 }

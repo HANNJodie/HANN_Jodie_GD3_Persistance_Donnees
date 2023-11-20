@@ -14,7 +14,7 @@ public class UIDialoguesReponses : MonoBehaviour
         for (int i = 0; i < _AnswerButtons.Length; i++)
         {
             _AnswerButtons[i].transform.GetChild(0).GetComponent<TMP_Text>().text = answers[i];
-            if (answers[i]== "")
+            if (answers[i] ==  "")
             {
                 _AnswerButtons[i].gameObject.SetActive(false);
             } else
