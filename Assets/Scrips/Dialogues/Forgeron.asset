@@ -14,9 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sentences:
   - Index: 0
+    ShortSentence: 
+    LongSentence: Bonjour voyageur !
+    CharacterSpeaking: PNJ
+    EndSentence: 0
+    Answer1: 1
+    Answer2: -1
+    QuestStarted: 0
+  - Index: 0
     ShortSentence: ...
-    LongSentences: "Depuis combien de temps etes vous \xE0 \u0E21\u0E31\u0E07\u0E01\u0E23\u0E44\u0E1F
-      ? Je ne vous est jamais vu."
+    LongSentence: "Viens tu d'arriver \xE0 \u0E21\u0E31\u0E07\u0E01\u0E23\u0E44\u0E1F
+      ?"
     CharacterSpeaking: PNJ
     EndSentence: 0
     Answer1: 2

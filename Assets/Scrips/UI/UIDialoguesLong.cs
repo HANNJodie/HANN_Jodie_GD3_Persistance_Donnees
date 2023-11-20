@@ -11,7 +11,7 @@ public class UIDialoguesLong : MonoBehaviour
     public void ShowLongDialog(string longSentence)
     {
         _longSentenceText.text = longSentence;
-        if(_DialogPanel.activeInHierarchy)
+        if(!_DialogPanel.activeInHierarchy)
         {
             _DialogPanel.SetActive(true);
         }

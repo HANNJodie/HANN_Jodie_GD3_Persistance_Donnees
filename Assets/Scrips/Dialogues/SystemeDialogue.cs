@@ -10,6 +10,8 @@ public class SystemeDialogue : MonoBehaviour
 
     public void StartTalking(int DialogueSentenceNumber)
     {
+
+
         _UIDialog.ShowLongDialog(_DialogDatas.Sentences[DialogueSentenceNumber].LongSentence);
         string[] answers = new string[2];
         if (_DialogDatas.Sentences[DialogueSentenceNumber].Answer1 != -1)
@@ -23,8 +25,7 @@ public class SystemeDialogue : MonoBehaviour
         if (_DialogDatas.Sentences[DialogueSentenceNumber].Answer2 != -1)
         {
             answers[0] = _DialogDatas.Sentences[_DialogDatas.Sentences[DialogueSentenceNumber].Answer2].ShortSentence;
-        }
-        else
+        } else
         {
             answers[0] = "";
         }

@@ -395,7 +395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &596437586
 RectTransform:
   m_ObjectHideFlags: 0
@@ -791,6 +791,7 @@ GameObject:
   - component: {fileID: 1108375053}
   - component: {fileID: 1108375052}
   - component: {fileID: 1108375056}
+  - component: {fileID: 1108375057}
   m_Layer: 0
   m_Name: PNJ
   m_TagString: Untagged
@@ -898,6 +899,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dce5e5eb8e3be464dadc9c01dd9fd7e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _StartSentence: 0
+  _interSentence: 0
+  _endSentence: 0
+  _questData: {fileID: 11400000, guid: 6fe75dddfabffeb4689b40d365e79800, type: 2}
+--- !u!114 &1108375057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108375051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3719fe055c4cd4aaf69b83d6019a08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _DialogDatas: {fileID: 11400000, guid: 23910227c253bea4faba88f2cf0f55f4, type: 2}
+  _UIDialog: {fileID: 2116460891}
+  _UIDialogAnswer: {fileID: 2116460892}
 --- !u!1 &1156543952
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,7 +935,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1156543953
 RectTransform:
   m_ObjectHideFlags: 0

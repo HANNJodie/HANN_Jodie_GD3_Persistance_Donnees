@@ -41,7 +41,7 @@ public class DatasQuest : ScriptableObject
     public void CheckObjective(int NumObject)     // On verifie si l'objectif est complétée
     {
 
-        if (Objectifs[NumObject].ActualValue == Objectifs[NumObject].MaxValue)
+        if (Objectifs[NumObject].ActualValue >= Objectifs[NumObject].MaxValue)
         {
             Objectifs[NumObject].IsFinished= true;
             CheckQuest();
@@ -55,7 +55,13 @@ public class DatasQuest : ScriptableObject
             if (Objectifs[i].CollectibleType == collectible.GetCollectibleType())
             {
                 Objectifs[i].ActualValue += collectible.GetCollectibleValue();
+
+                CheckObjective(i);
+
+                break;
             }
         }
+
+
     }
 }
