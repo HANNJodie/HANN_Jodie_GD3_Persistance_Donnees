@@ -1485,7 +1485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RigidbodyPerso: {fileID: 0}
-  vitesseDeplacement: 1
+  vitesseDeplacement: 10
 --- !u!54 &1537788887
 Rigidbody:
   m_ObjectHideFlags: 0
