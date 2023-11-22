@@ -12,6 +12,7 @@ public class Collectible : MonoBehaviour, ICollectible
     public void Collect()
     {
         _questData.UpdateObjective(this);
+        _scoreData.UpdateScoreValue(_value);
         Destroy(gameObject);
     }
 

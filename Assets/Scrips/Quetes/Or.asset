@@ -17,4 +17,4 @@ MonoBehaviour:
   StartValue: 1
   ActualValue: 0
   CollectibleType: Or
-  IsFinished: 0
+  IsFinished: 1
