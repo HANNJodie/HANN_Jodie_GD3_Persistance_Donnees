@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Fer
   m_EditorClassIdentifier: 
   Name: Minerai de Fer
-  MaxValue: 0
-  StartValue: 2
+  MaxValue: 6
+  StartValue: 0
   ActualValue: 0
   CollectibleType: Fer
-  IsFinished: 1
+  IsFinished: 0

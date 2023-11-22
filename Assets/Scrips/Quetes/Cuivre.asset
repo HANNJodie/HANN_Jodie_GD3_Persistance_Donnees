@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Cuivre
   m_EditorClassIdentifier: 
   Name: Minerai de Cuivre
-  MaxValue: 0
-  StartValue: 6
-  ActualValue: 0
+  MaxValue: 6
+  StartValue: 0
+  ActualValue: 6
   CollectibleType: Cuivre
   IsFinished: 1
